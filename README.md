@@ -222,3 +222,23 @@ If you use SAM 2 or the SA-V dataset in your research, please use the following 
   year={2024}
 }
 ```
+
+
+## My additions
+* pip installation worked fine
+* Do not foget to do module load python/3.12.0 cuda/12.6.3 ffmpeg
+* python3 -m venv .venv_2
+* . .venv_2/bin/activate
+* pip install --upgrade pip
+* pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
+* pip install -e . && pip install -e ".[notebooks]"
+* export AM_I_DOCKER=False
+* export BUILD_WITH_CUDA=True
+* export CUDA_HOME=/apps/cuda/12.6.3/
+<!-- * cd ../Grounded-Segment-Anything
+* python -m pip install -e segment_anything
+* pip install --no-build-isolation -e GroundingDINO - does not work
+* pip install --upgrade diffusers[torch] -->
+* 
+* pip install supervision==0.11.0
+* pip install timm transformers addict pycocotools yapf imageio open-clip-torch ultralytics natsort kornia plotly open3d faiss-cpu openai ninja setuptools wheel
